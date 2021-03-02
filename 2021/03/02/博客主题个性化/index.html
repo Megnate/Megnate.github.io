@@ -20,18 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="My blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Magnate">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="主题设置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客主题个性化">
+<meta property="og:url" content="http://example.com/2021/03/02/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/index.html">
 <meta property="og:site_name" content="Magnate">
-<meta property="og:description" content="My blog">
+<meta property="og:description" content="主题设置">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-03-02T07:02:56.000Z">
+<meta property="article:modified_time" content="2021-03-02T07:12:25.823Z">
 <meta property="article:author" content="Mei Guinan">
-<meta property="article:tag" content="study">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="设置">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2021/03/02/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/">
 
 
 <script id="page-configurations">
@@ -39,12 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Magnate</title>
+  <title>博客主题个性化 | Magnate</title>
   
 
 
@@ -143,90 +146,116 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/02/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Mei Guinan">
+      <meta itemprop="description" content="My blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Magnate">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客主题个性化
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-02 15:02:56 / 修改时间：15:12:25" itemprop="dateCreated datePublished" datetime="2021-03-02T15:02:56+08:00">2021-03-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+        <p>主题设置</p>
+<span id="more"></span>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<h3 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h3><ul>
+<li>在根目录的<code>_config.yml</code>文件中修改配置项<code>post_asset_folder: true</code>：修改完成之后，当创建新的博客的时候会新建一个同名的文件夹，来保存图片</li>
+<li>在根目录安装插件：<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code></li>
+</ul>
+<p>当文章需要图片的时候，将图片放入同名文件夹中，通过<strong>相对路径</strong>索引到该图片</p>
+<h3 id="首先显示部分内容"><a href="#首先显示部分内容" class="headerlink" title="首先显示部分内容"></a>首先显示部分内容</h3><ul>
+<li>第一种：在最上面加入：<code>description:</code></li>
+<li>第二种：在需要截断的地方插入：<code>&lt;!-- more --&gt;</code>就行</li>
+</ul>
+<h3 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h3><p><code>tags:显示所属分类</code></p>
+<p><code>categories:显示所属标签</code></p>
+<p>需要现在根目录处<code>git bash</code>生成<strong>标签</strong>和<strong>分类</strong>对应的文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories  分类</span><br><span class="line"></span><br><span class="line">hexo new page tags  标签</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-02T15:02:56+08:00"
-              content="2021-03-02">
-          03-02
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/02/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/" itemprop="url">
-            <span itemprop="name">博客主题个性化</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-02T11:15:05+08:00"
-              content="2021-03-02">
-          03-02
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/02/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" itemprop="url">
-            <span itemprop="name">创建博客教程</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-02T11:08:10+08:00"
-              content="2021-03-02">
-          03-02
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/03/02/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+<ul>
+<li>修改标签和分类打开是空白的问题，以及设置字体等主题<ul>
+<li><code>打开source-categories文件夹中的index.md</code>添加一行：<code>type: &quot;categories&quot;</code></li>
+<li><code>打开source-tags文件夹中的index.md</code>添加一行：<code>type: &quot;tags&quot;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="插入别人链接"><a href="#插入别人链接" class="headerlink" title="插入别人链接"></a>插入别人链接</h3><p>在主题文件中，在设置menu的菜单下面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">social:   #友链地址</span><br><span class="line">  GitHub: https:&#x2F;&#x2F;github.com&#x2F;condorheroblog || github</span><br><span class="line">  E-Mail: mailto:2846124732@qq.com || envelope</span><br><span class="line">  简书: https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;491bd4155f96</span><br><span class="line">  QQ: http:&#x2F;&#x2F;sighttp.qq.com&#x2F;authd?IDKEY&#x3D;f67c919702f76aff21f09284308fe39875d3f6b466780165</span><br><span class="line">social_icons:  #友链图标</span><br><span class="line">  enable: true</span><br><span class="line">  icons_only: false</span><br><span class="line">  transition: false</span><br></pre></td></tr></table></figure>
 
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/%E8%AE%BE%E7%BD%AE/" rel="tag"># 设置</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/02/%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" rel="prev" title="创建博客教程">
+      <i class="fa fa-chevron-left"></i> 创建博客教程
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -279,6 +308,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87"><span class="nav-number">1.</span> <span class="nav-text">添加图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A6%96%E5%85%88%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E5%86%85%E5%AE%B9"><span class="nav-number">2.</span> <span class="nav-text">首先显示部分内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E5%88%AB%E4%BA%BA%E9%93%BE%E6%8E%A5"><span class="nav-number">4.</span> <span class="nav-text">插入别人链接</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
